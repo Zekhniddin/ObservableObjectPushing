@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0829039625B6F9FC0011B852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0829039525B6F9FC0011B852 /* AppDelegate.swift */; };
 		0829039825B6F9FC0011B852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0829039725B6F9FC0011B852 /* SceneDelegate.swift */; };
-		0829039A25B6F9FC0011B852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0829039925B6F9FC0011B852 /* ContentView.swift */; };
 		0829039C25B6F9FE0011B852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0829039B25B6F9FE0011B852 /* Assets.xcassets */; };
 		0829039F25B6F9FE0011B852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0829039E25B6F9FE0011B852 /* Preview Assets.xcassets */; };
 		082903A225B6F9FE0011B852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082903A025B6F9FE0011B852 /* LaunchScreen.storyboard */; };
+		082903AE25B6FA690011B852 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082903AD25B6FA690011B852 /* Status.swift */; };
+		082903B125B6FA810011B852 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082903B025B6FA810011B852 /* HomeScreen.swift */; };
+		082903B425B6FA9C0011B852 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082903B325B6FA9C0011B852 /* SignInScreen.swift */; };
+		082903B725B6FAB00011B852 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082903B625B6FAB00011B852 /* SignUpScreen.swift */; };
+		082903BA25B6FAC40011B852 /* StarterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082903B925B6FAC40011B852 /* StarterScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0829039225B6F9FC0011B852 /* ObservableObjectPushing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableObjectPushing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0829039525B6F9FC0011B852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0829039725B6F9FC0011B852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0829039925B6F9FC0011B852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0829039B25B6F9FE0011B852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0829039E25B6F9FE0011B852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		082903A125B6F9FE0011B852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082903A325B6F9FE0011B852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082903AD25B6FA690011B852 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		082903B025B6FA810011B852 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		082903B325B6FA9C0011B852 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		082903B625B6FAB00011B852 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		082903B925B6FAC40011B852 /* StarterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +64,10 @@
 		0829039425B6F9FC0011B852 /* ObservableObjectPushing */ = {
 			isa = PBXGroup;
 			children = (
+				082903AB25B6FA3C0011B852 /* screens */,
+				082903AA25B6FA350011B852 /* apputils */,
 				0829039525B6F9FC0011B852 /* AppDelegate.swift */,
 				0829039725B6F9FC0011B852 /* SceneDelegate.swift */,
-				0829039925B6F9FC0011B852 /* ContentView.swift */,
-				0829039B25B6F9FE0011B852 /* Assets.xcassets */,
-				082903A025B6F9FE0011B852 /* LaunchScreen.storyboard */,
 				082903A325B6F9FE0011B852 /* Info.plist */,
 				0829039D25B6F9FE0011B852 /* Preview Content */,
 			);
@@ -73,6 +80,27 @@
 				0829039E25B6F9FE0011B852 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		082903AA25B6FA350011B852 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				082903A025B6F9FE0011B852 /* LaunchScreen.storyboard */,
+				0829039B25B6F9FE0011B852 /* Assets.xcassets */,
+				082903AD25B6FA690011B852 /* Status.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		082903AB25B6FA3C0011B852 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				082903B025B6FA810011B852 /* HomeScreen.swift */,
+				082903B325B6FA9C0011B852 /* SignInScreen.swift */,
+				082903B625B6FAB00011B852 /* SignUpScreen.swift */,
+				082903B925B6FAC40011B852 /* StarterScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082903B125B6FA810011B852 /* HomeScreen.swift in Sources */,
+				082903B425B6FA9C0011B852 /* SignInScreen.swift in Sources */,
+				082903BA25B6FAC40011B852 /* StarterScreen.swift in Sources */,
 				0829039625B6F9FC0011B852 /* AppDelegate.swift in Sources */,
 				0829039825B6F9FC0011B852 /* SceneDelegate.swift in Sources */,
-				0829039A25B6F9FC0011B852 /* ContentView.swift in Sources */,
+				082903AE25B6FA690011B852 /* Status.swift in Sources */,
+				082903B725B6FAB00011B852 /* SignUpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
